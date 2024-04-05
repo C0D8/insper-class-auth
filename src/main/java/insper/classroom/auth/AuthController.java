@@ -5,7 +5,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
-@FeignClient("classroom-auth")
+@FeignClient(name = "classroom-auth")
 public interface AuthController {
 
     @PostMapping("/auth/register")
@@ -22,4 +22,5 @@ public interface AuthController {
     ResponseEntity<SolveOut> solve (
         @RequestBody(required = true) SolveIn in
     );
+
 }
