@@ -1,1 +1,1 @@
-# platform.241.store.auth
+# Projeto Insper Classroom - Auth
